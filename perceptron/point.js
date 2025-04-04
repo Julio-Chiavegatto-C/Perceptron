@@ -1,11 +1,17 @@
+function f(x){
+    return 0.3 * x + 0.2;
+}
+
 class Point {
     x = 0;
     y = 0;
     label = 0;
+    bias;
 
     constructor(x,y){
         this.x = x;
         this.y = y;
+        this.bias = 1;
         this.label = this.getLabel();
     }
 
